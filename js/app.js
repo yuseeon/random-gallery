@@ -22,6 +22,17 @@
             })
     }
 
+    // 년/월/일
+    let d = new Date();
+    let year = d.getFullYear();
+    let month = d.getMonth() + 1;
+    let date = d.getDate();
+    console.log(year, month, date);
+
+    $('.year').html(year);
+    $('.month').html(month);
+    $('.date').html(date);
+
     // setInterval (함수 , 시간ms)
     setInterval(changeBg, 5000);
 });
